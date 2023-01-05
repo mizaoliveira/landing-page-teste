@@ -1,0 +1,18 @@
+<script>
+    let idadePaciente, nomePaciente, quantidadeVezesPassouMedico
+    let quantidadeMedicamentosEstoque, quantidadeMedicamentosPaciente
+
+    nomePaciente = prompt("Qual o nome do paciente?")
+    idadePaciente = prompt("Qual a idade do paciente?")
+    quantidadeVezesPassouMedico = prompt("Quantas vezes o paciente passou no médico?")
+    quantidadeMedicamentosEstoque = prompt("Quanto medicamento possui em estoque?")
+
+    console.log("Nome do paciente cadastrado: " + nomePaciente)
+    console.log("Idade do paciente cadastrado: " + idadePaciente)
+    console.log("Quantidade de vezes que passou no médico: " + quantidadeVezesPassouMedico)
+
+    while(quantidadeMedicamentosEstoque > 0) {
+        quantidadeMedicamentosPaciente = prompt("Quanto medicamento voc quer dar ao paciente?")
+        quantidadeMedicamentosEstoque = quantidadeMedicamentosEstoque - quantidadeMedicamentosPaciente
+    }
+</script>
